@@ -1,0 +1,39 @@
+<html>
+<head>
+<body>
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+	
+<script>
+
+
+/**
+ * 7.	De-structuring assignment:
+	a.	Suppose there is a javascript array with 4 elements. Print the value of 3rd element using array matching.
+	b.	Create an organization object having attributes name, address. Write a program to retrieve pin code of an address using object deep matching.
+ */
+
+var names = ["Adrija", "Biswas", "Asit", "Ram"];
+var [firstelement,secondelement,thirdelement,fourthelement]= names;
+console.log(thirdelement);
+
+
+//Ans b.
+
+var organization ={
+    name:"Adrija",
+    address:{
+        city:"Kolkata",
+        state:"WestBengal",
+        pincode:700057 
+    }
+}
+
+const {address:{city:city1,state:state1,pincode:pincode1}}=organization;
+
+console.log(pincode1);
+</script>
+</body>
+</head>
+</html>
